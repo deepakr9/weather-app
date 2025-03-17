@@ -30,5 +30,30 @@
         </div>
         
  </div>
+    <div class="bg-white/10 flex p-6 gap-6 rounded-xl ">
+        <div class="flex flex-col  items-center">
+            <img src="images/image.png" alt="" class="w-16 h-16">
+            <div class="flex flex-col m-16 items-center ">
+                <h1 class="text-white font-bold text-2xl">Clouds</h1>
+                <p class="text-white font-semibold text-sm">{{clouds}}</p>
+            </div>
+        </div>
+
+        <div class="flex flex-col p-3 gap-3 w-[280px]">
+            <div class="flex flex-col items-center justify-between bg-white/20 rounded-md p-3 w-full">
+                <span class="text-white font-bold text-xl"> {{temp}}&deg;C</span>
+                <span class="text-white font-semibold text-sm">Temperature</span>
+            </div>
+            <div class="flex flex-col items-center justify-between bg-white/20 rounded-md p-3 w-full">
+                <span class="text-white font-bold text-xl">{{speed}}m/s </span>
+                <span class="text-white font-semibold text-sm">Wind Speed</span>
+            </div>
+            <div class="flex flex-col items-center justify-between bg-white/20 rounded-md p-3 w-full">
+                <span class="text-white font-bold text-xl">{{hum}}%</span>
+                <span class="text-white font-semibold text-sm">Humidity</span>
+            </div>
+        </div>
+        
+    </div>    
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>
