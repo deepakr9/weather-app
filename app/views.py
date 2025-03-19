@@ -13,5 +13,7 @@ def index(request):
     hum = api["main"]["humidity"]
     speed = api["wind"]["speed"]
     clouds = api["clouds"]["all"]
+    icon = api["weather"][0]["icon"]
+    weather = api["weather"][0]["main"]
 
-    return render(request, "index.html", {"temp":temp, "country":country, "city":city_name, "hum":hum, "speed":speed, "clouds":clouds})
+    return render(request, "index.html", {"temp":temp, "country":country, "city":city_name, "hum":hum, "speed":speed, "clouds":clouds, "icon":icon, "weather":weather})
