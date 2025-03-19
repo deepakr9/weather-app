@@ -30,30 +30,37 @@
         </div>
         
  </div>
-    <div class="bg-white/10 flex p-6 gap-6 rounded-xl ">
-        <div class="flex flex-col  items-center">
-            <img src="{% static 'images/image.png' %}" alt="" class="w-16 h-16">
-            <div class="flex flex-col m-16 items-center ">
-                <h1 class="text-white font-bold text-2xl">Clouds</h1>
-                <p class="text-white font-semibold text-sm">{{clouds}}</p>
+    <div class="flex flex-row gap-5 bg-[#007BA0] backdrop-blur-2xl rounded-xl p-3 ">
+    <div class="flex flex-col gap-5">
+        <img src="/images/113.png" alt="">
+        <div class="text-white">
+            <p class="text-2xl font-bold">Clouds</p>
+            <p>{{clouds}}</p>
+        </div>            
+    </div>
+    <div class="bg-transparent flex flex-col gap-2">
+        <div class="flex flex-row p-2 bg-white/20 rounded-lg gap-3">
+            <ion-icon name="thermometer" class="text-white text-2xl mt-3 "></ion-icon> 
+            <div>
+                <p class="text-white font-bold text-2xl">{{temp}}</p>
+                <p class="text-white font-semibold text-sm">Temperature</p>
             </div>
         </div>
-
-        <div class="flex flex-col p-3 gap-3 w-[280px]">
-            <div class="flex flex-col items-center justify-between bg-white/20 rounded-md p-3 w-full">
-                <span class="text-white font-bold text-xl"> {{temp}}&deg;C</span>
-                <span class="text-white font-semibold text-sm">Temperature</span>
-            </div>
-            <div class="flex flex-col items-center justify-between bg-white/20 rounded-md p-3 w-full">
-                <span class="text-white font-bold text-xl">{{speed}}m/s </span>
-                <span class="text-white font-semibold text-sm">Wind Speed</span>
-            </div>
-            <div class="flex flex-col items-center justify-between bg-white/20 rounded-md p-3 w-full">
-                <span class="text-white font-bold text-xl">{{hum}}%</span>
-                <span class="text-white font-semibold text-sm">Humidity</span>
+        <div class="flex flex-row p-2 bg-white/20 rounded-lg gap-3">
+            <ion-icon name="speedometer" class="text-white text-2xl mt-3 "></ion-icon> 
+            <div>
+                <p class="text-white font-bold text-2xl">{{speed}} m/s</p>
+                <p class="text-white font-semibold text-sm">Wind Speed</p>
             </div>
         </div>
-        
+        <div class="flex flex-row p-2 bg-white/20 rounded-lg gap-3">
+            <ion-icon name="rainy" class="text-white text-2xl mt-3 "></ion-icon> 
+            <div>
+                <p class="text-white font-bold text-2xl">{{hum}} %</p>
+                <p class="text-white font-semibold text-sm">Humidity</p>
+            </div>
+        </div>
+    </div>
     </div>    
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>
