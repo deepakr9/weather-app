@@ -17,4 +17,4 @@ def index(request):
     weather = api["weather"][0]["main"]
     icon_url = f"https://openweathermap.org/img/wn/{icon}@2x.png"
 
-    return render(request, "index.html", {"temp":temp, "country":country, "city":city_name, "hum":hum, "speed":speed, "clouds":clouds, "icon":icon, "weather":weather})
+    return render(request, "index.html", {"temp":temp, "country":country, "city":city_name, "hum":hum, "speed":speed, "clouds":clouds, "icon":icon_url, "weather":weather})
